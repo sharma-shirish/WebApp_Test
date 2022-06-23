@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import CompanyDetails
+from .models import Company
 # Create your views here.
 
 
 def home(request):
-    company = CompanyDetails()
+    company = Company()
     company.name = "ECOURSES"
     company.email = "contact@ecourses.com"
     company.phone = "+1 012 345 6789"
